@@ -77,6 +77,7 @@ angular.module('dynaForm', [])
             <i class="fa" ng-class="btn.icon"></i> {{btn.text}}\
           </button>\
         </span>\
+        <span ng-transclude="ng-transclude"></span>\
         <p class="text-danger" ng-if="$error">{{error}}</p>\
         <p class="mt-4"><span class="alert alert-danger" role="alert" ng-if="$form.$submitted && $form.$invalid">{{$errorMessages[\'formError\']}}</span></p>\
       ',
